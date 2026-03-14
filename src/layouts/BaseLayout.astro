@@ -14,6 +14,27 @@ const { title = 'Certifications | Baman Prasad Guragain' } = Astro.props;
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <meta name="description" content="Certifications & Achievements — Baman Prasad Guragain" />
+    
+    <!-- Security Headers -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="X-Frame-Options" content="DENY" />
+    <meta name="X-Content-Type-Options" content="nosniff" />
+    <meta name="Referrer-Policy" content="strict-origin-when-cross-origin" />
+    <meta name="Permissions-Policy" content="camera=(), microphone=(), geolocation=()" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.credly.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' data: https://fonts.gstatic.com; img-src 'self' data: blob: https:; frame-src https://www.credly.com; connect-src 'self' https://cdn.credly.com;" />
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content="Certifications & Achievements — Baman Prasad Guragain" />
+    <meta property="og:url" content="https://certificates.bamanguragain.com.np" />
+    <meta property="og:site_name" content="Baman's Certifications" />
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content="Certifications & Achievements — Baman Prasad Guragain" />
+    
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

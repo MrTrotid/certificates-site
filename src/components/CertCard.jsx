@@ -37,16 +37,16 @@ export default function CertCard({ cert, onImageClick }) {
     <div className="bg-bg-surface border border-border-subtle rounded-lg p-5 transition-all duration-200 hover:border-accent-green/60 hover:shadow-[0_0_0_1px_#00ff88,0_0_16px_#00ff8822] flex flex-col h-full">
       {/* Image Section */}
       <div 
-        className="aspect-video w-full object-cover rounded-lg mb-4 cursor-pointer overflow-hidden group relative shrink-0"
+        className="w-full h-48 rounded-xl mb-4 cursor-pointer overflow-hidden group relative shrink-0 bg-bg-surface-hover flex items-center justify-center border border-border-subtle"
         onClick={() => onImageClick(cert.image)}
       >
         <img 
           src={cert.image} 
           alt={cert.title}
-          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-200"
+          className="max-w-full max-h-full object-contain rounded-lg group-hover:scale-105 transition-transform duration-200"
         />
-        <div className="absolute inset-0 flex items-center justify-center bg-black/0 group-hover:bg-black/30 transition-all duration-200 rounded-lg">
-          <span className="text-white opacity-0 group-hover:opacity-100 font-mono text-sm bg-black/50 px-3 py-1 rounded">
+        <div className="absolute inset-0 flex items-center justify-center bg-black/0 group-hover:bg-black/30 transition-all duration-200 rounded-xl">
+          <span className="text-white opacity-0 group-hover:opacity-100 font-mono text-sm bg-black/50 px-3 py-1 rounded-lg">
             Click to enlarge
           </span>
         </div>

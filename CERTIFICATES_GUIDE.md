@@ -239,6 +239,35 @@ Vercel will auto-deploy in ~30 seconds.
 
 ---
 
-## 9. Reporting Issues
+## 9. Security Measures
+
+This website includes the following security headers:
+
+### Applied Security Headers
+
+| Header | Value | Purpose |
+|--------|-------|---------|
+| X-Frame-Options | DENY | Prevents clickjacking - site cannot be embedded in iframes |
+| X-Content-Type-Options | nosniff | Prevents MIME type sniffing |
+| X-XSS-Protection | 1; mode=block | XSS filter in browsers |
+| Referrer-Policy | strict-origin-when-cross-origin | Controls referrer info |
+| Permissions-Policy | camera=(), microphone=(), geolocation=() | Blocks unnecessary permissions |
+| Strict-Transport-Security | max-age=31536000 | Enforces HTTPS |
+| Content-Security-Policy | Custom policy | Restricts resources |
+
+### CSP Details
+- `default-src 'self'` - Only same-origin by default
+- `script-src` - Allows self + Credly scripts
+- `style-src` - Allows self + Google Fonts
+- `img-src` - Allows data: and https images
+- `frame-src` - Only Credly for badges
+
+### Files Modified
+- `src/layouts/BaseLayout.astro` - Meta tags
+- `vercel.json` - Server-level headers
+
+---
+
+## 10. Reporting Issues
 
 Found a bug or have a suggestion? See [CONTRIBUTING.md](./CONTRIBUTING.md).
