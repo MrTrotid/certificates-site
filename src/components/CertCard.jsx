@@ -75,7 +75,7 @@ export default function CertCard({ cert, onImageClick }) {
 
       {/* Card Tags */}
       <div className="flex flex-wrap gap-2 mb-3">
-        {cert.tags.map(tag => (
+        {cert.tags.filter(tag => tag !== 'important').map(tag => (
           <TagPill key={tag} tag={tag} />
         ))}
       </div>

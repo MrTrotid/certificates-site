@@ -1,5 +1,6 @@
 import React, { useState, useMemo } from 'react';
 import HeroStats from './HeroStats';
+import Disclaimer from './Disclaimer';
 import FilterBar from './FilterBar';
 import SearchBar from './SearchBar';
 import CertCard from './CertCard';
@@ -13,7 +14,11 @@ export default function CertificatesApp({ certificates }) {
 
   const filtered = useMemo(() => {
     return certificates
-      .filter(c => activeFilter === 'all' || c.category === activeFilter)
+      .filter(c => {
+        if (activeFilter === 'all') return true;
+        if (activeFilter === 'important') return c.tags.includes('important');
+        return c.category === activeFilter;
+      })
       .filter(c => {
         const q = searchQuery.toLowerCase();
         return (
@@ -32,6 +37,8 @@ export default function CertificatesApp({ certificates }) {
   return (
     <div className="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
       <HeroStats certificates={certificates} />
+      
+      <Disclaimer />
       
       <SearchBar value={searchQuery} onSearch={setSearchQuery} />
       <FilterBar 

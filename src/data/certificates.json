@@ -25,7 +25,7 @@
       "image": "/images/Networking Basics.jpg",
       "credential_id": "0aae43e2-1a99-4e09-a8e1-88ae00501496",
       "verify_url": "https://www.credly.com/badges/0aae43e2-1a99-4e09-a8e1-88ae00501496/public_url",
-      "tags": ["networking", "cisco", "basics"],
+      "tags": ["networking", "cisco", "basics", "important"],
       "featured": false
     },
     {
@@ -39,7 +39,7 @@
       "image": "/images/Introduction to Cybersecurity.jpg",
       "credential_id": "74e91504-b42c-4f3b-b3a5-28176cd29f4c",
       "verify_url": "https://www.credly.com/badges/74e91504-b42c-4f3b-b3a5-28176cd29f4c/public_url",
-      "tags": ["cybersecurity", "cisco", "security"],
+      "tags": ["cybersecurity", "cisco", "security", "important"],
       "featured": false
     },
     {
@@ -53,7 +53,7 @@
       "image": "/images/Learn Python Basics.jpg",
       "credential_id": "52855AD2A16A",
       "verify_url": null,
-      "tags": ["python", "programming", "basics"],
+      "tags": ["python", "programming", "basics", "important"],
       "featured": false
     },
     {
@@ -67,21 +67,21 @@
       "image": "/images/Python Basics Challenges.jpg",
       "credential_id": "5B7194E789BB",
       "verify_url": null,
-      "tags": ["python", "programming", "challenges"],
+      "tags": ["python", "programming", "challenges", "important"],
       "featured": false
     },
     {
       "id": "python-basic-hackerrank",
-      "title": "Python (basic)",
+      "title": "Python (Basic)",
       "issuer": "Hackerrank",
       "category": "certification",
       "date": "2024-07",
       "expiry": null,
       "description": "Completed Python (basic) certification on Hackerrank demonstrating fundamental Python skills.",
       "image": "/images/Python (Basic) - HackerRank.png",
-      "credential_id": null,
-      "verify_url": null,
-      "tags": ["python", "hackerrank", "programming"],
+      "credential_id": "f807f5bcbc0c",
+      "verify_url": "https://www.hackerrank.com/certificates/f807f5bcbc0c",
+      "tags": ["python", "hackerrank", "programming", "important"],
       "featured": false
     },
     {
@@ -95,7 +95,7 @@
       "image": "/images/Complexity Calculation.jpg",
       "credential_id": "2EA01A4912B9",
       "verify_url": null,
-      "tags": ["algorithms", "complexity", "programming"],
+      "tags": ["algorithms", "complexity", "programming", "important"],
       "featured": false
     },
     {
@@ -109,7 +109,7 @@
       "image": "/images/Learn SQL Basics.jpg",
       "credential_id": "5CE0854840BF",
       "verify_url": null,
-      "tags": ["sql", "database", "programming"],
+      "tags": ["sql", "database", "programming", "important"],
       "featured": false
     },
     {
@@ -123,7 +123,7 @@
       "image": "/images/Learn Recursion with Python.jpg",
       "credential_id": "5AACFA38888A",
       "verify_url": null,
-      "tags": ["python", "recursion", "algorithms"],
+      "tags": ["python", "recursion", "algorithms", "important"],
       "featured": false
     },
     {
@@ -137,7 +137,7 @@
       "image": "/images/Practice Python Intermediate.jpg",
       "credential_id": "3E10FA7A2D68",
       "verify_url": null,
-      "tags": ["python", "programming", "intermediate"],
+      "tags": ["python", "programming", "intermediate", "important"],
       "featured": false
     },
 
@@ -152,7 +152,7 @@
       "image": "/images/3rd Place — Cambridge Code League.jpg",
       "credential_id": null,
       "verify_url": null,
-      "tags": ["hackathon", "competition", "coding"],
+      "tags": ["hackathon", "competition", "coding", "important"],
       "featured": false
     },
     {
@@ -166,7 +166,7 @@
       "image": "/images/Cambridge Code League Best UI UX.jpg",
       "credential_id": null,
       "verify_url": null,
-      "tags": ["hackathon", "ui", "ux", "design"],
+      "tags": ["hackathon", "ui", "ux", "design", "important"],
       "featured": false
     },
     {
@@ -194,7 +194,7 @@
       "image": "/images/STEAM 1st Place.jpg",
       "credential_id": null,
       "verify_url": null,
-      "tags": ["award", "winner", "steam"],
+      "tags": ["award", "winner", "steam", "important"],
       "featured": false
     },
     {
@@ -208,7 +208,7 @@
       "image": "/images/Certificate of Appreciation — Math Mania 2023.jpg",
       "credential_id": null,
       "verify_url": null,
-      "tags": ["volunteering", "math", "organising"],
+      "tags": ["volunteering", "math", "organising", "important"],
       "featured": false
     },
     {
@@ -222,7 +222,7 @@
       "image": "/images/Certificate of Recognition — Math Mania 2024.jpg",
       "credential_id": null,
       "verify_url": null,
-      "tags": ["volunteering", "math", "organising"],
+      "tags": ["volunteering", "math", "organising", "important"],
       "featured": false
     },
     {
@@ -250,7 +250,7 @@
       "image": "/images/Certificate of Appreciation — Event Manager at Budanilkantha Junior Jaycees .jpg",
       "credential_id": null,
       "verify_url": null,
-      "tags": ["volunteering", "event management", "jaycees"],
+      "tags": ["volunteering", "event management", "jaycees", "important"],
       "featured": false
     },
     {
@@ -265,20 +265,6 @@
       "credential_id": null,
       "verify_url": null,
       "tags": ["scouts", "camp", "eca"],
-      "featured": false
-    },
-    {
-      "id": "sos-certificate-appreciation",
-      "title": "Certificate of Appreciation",
-      "issuer": "SOS Children's Villages Nepal",
-      "category": "volunteering",
-      "date": "2023-07",
-      "expiry": null,
-      "description": "Received certificate of appreciation for contribution to SOS Children's Villages Nepal.",
-      "image": "/images/SOS Certificate Appreciation.jpg",
-      "credential_id": null,
-      "verify_url": null,
-      "tags": ["volunteering", "children", "community"],
       "featured": false
     },
     {
@@ -297,16 +283,44 @@
     },
     {
       "id": "kat-centre-community-service",
-      "title": "Community Service Specialist",
-      "issuer": "KAT Centre Nepal",
+      "title": "Certificate of Appreciation",
+      "issuer": "KAT Clinic Centre",
       "category": "volunteering",
       "date": "2023-08",
       "expiry": null,
-      "description": "Received certificate as Community Service Specialist at KAT Centre Nepal for animal welfare work.",
-      "image": "/images/KAT Centre Community Service.jpg",
+      "description": "Received certificate of appreciation for volunteer work at KAT Clinic Centre for animal welfare.",
+      "image": "/images/Certificate of Appreciation - KAT Clinic Centre.jpeg",
       "credential_id": null,
       "verify_url": null,
       "tags": ["volunteering", "animal welfare", "community"],
+      "featured": false
+    },
+    {
+      "id": "anmol-bal-bikas-griha",
+      "title": "Certificate of Appreciation",
+      "issuer": "Anmol Bal Bikas Griha",
+      "category": "volunteering",
+      "date": "2024-06",
+      "expiry": null,
+      "description": "Received certificate of appreciation for volunteer work at Anmol Bal Bikas Griha.",
+      "image": "/images/Certificate of Appreciation - Anmol Bal Bikas Griha.jpg",
+      "credential_id": null,
+      "verify_url": null,
+      "tags": ["volunteering", "children", "community"],
+      "featured": false
+    },
+    {
+      "id": "pride-month-junior-jaycees",
+      "title": "Pride Month Award",
+      "issuer": "Junior Jaycees Budhanilkantha",
+      "category": "award",
+      "date": "2024-06",
+      "expiry": null,
+      "description": "Received Pride Month Award holder recognition from Junior Jaycees Budhanilkantha.",
+      "image": "/images/Pride Month Award holder of Junior Jaycees Budhanilkantha.jpg",
+      "credential_id": null,
+      "verify_url": null,
+      "tags": ["award", "pride", "jaycees"],
       "featured": false
     }
   ]
