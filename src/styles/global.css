@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg-base: #0a0a0f;
+  --color-bg-surface: #111118;
+  --color-bg-surface-hover: #16161f;
+  --color-border-subtle: #1e1e2e;
+  --color-accent-green: #00ff88;
+  --color-accent-blue: #00aaff;
+  --color-accent-yellow: #ffd700;
+  --color-text-primary: #e2e8f0;
+  --color-text-muted: #64748b;
+  --color-tag-bg: #0d2518;
+  --color-tag-blue-bg: #091a2a;
+  
+  --font-mono: "JetBrains Mono", "Fira Code", monospace;
+  --font-sans: "Inter", sans-serif;
+  
+  --shadow-glow-green: 0 0 0 1px #00ff88, 0 0 16px #00ff8822;
+  --shadow-glow-blue: 0 0 0 1px #00aaff, 0 0 16px #00aaff22;
+}
+
+@layer base {
+  html {
+    background-color: #0a0a0f;
+    color: #e2e8f0;
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #0a0a0f;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #1e1e2e;
+    border-radius: 3px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #00ff8844;
+  }
+}
+
+@utility line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

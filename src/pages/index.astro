@@ -1,0 +1,11 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CertificatesApp from '../components/CertificatesApp.jsx';
+import certificatesData from '../data/certificates.json';
+
+const { certificates } = certificatesData;
+---
+
+<BaseLayout>
+  <CertificatesApp client:load certificates={certificates} />
+</BaseLayout>
