@@ -23,9 +23,14 @@ function formatCategoryLabel(category) {
 }
 
 function formatDate(dateStr) {
-  const [year, month] = dateStr.split('-');
+  const parts = dateStr.split('-');
+  const year = parts[0];
+  const month = parts[1];
   const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-  return `${monthNames[parseInt(month, 10) - 1]} ${year}`;
+  if (month) {
+    return `${monthNames[parseInt(month, 10) - 1]} ${year}`;
+  }
+  return year;
 }
 
 export default function CertCard({ cert, onImageClick }) {
